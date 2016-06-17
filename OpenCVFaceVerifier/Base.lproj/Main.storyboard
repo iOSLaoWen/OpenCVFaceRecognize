@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-hg-8SO">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GVB-1m-3rJ">
+                                <rect key="frame" x="53" y="345" width="30" height="30"/>
+                                <state key="normal" title="录入"/>
+                                <connections>
+                                    <action selector="onBtnRecordClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WHs-hA-bbW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efI-Bv-RpI">
+                                <rect key="frame" x="177" y="345" width="30" height="30"/>
+                                <state key="normal" title="验证"/>
+                                <connections>
+                                    <action selector="onBtnVerifyClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGG-6p-oon"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap8-BD-uwS">
+                                <rect key="frame" x="61" y="390" width="30" height="30"/>
+                                <state key="normal" title="抓取"/>
+                                <connections>
+                                    <action selector="onBtnCaptureClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mmd-Jv-pkm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sgL-hg-8SO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Adm-VO-6M6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sgL-hg-8SO" secondAttribute="trailing" constant="-20" id="XjA-CW-SmK"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="sgL-hg-8SO" secondAttribute="bottom" id="hZb-lV-Fz5"/>
+                            <constraint firstItem="sgL-hg-8SO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="m4J-SH-jwE"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="cameraView" destination="sgL-hg-8SO" id="YWM-1s-YFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="354.5" y="327.5"/>
+        </scene>
+    </scenes>
+</document>
